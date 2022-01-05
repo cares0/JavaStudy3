@@ -51,7 +51,7 @@ public class StudentUtil {
 			System.out.println("학생의 수학점수를 입력하세요.");
 			stu.math = sc.nextInt();
 			
-			stu.total = stu.kor + stu.eng + stu.math;
+			stu.makeTotal();
 			stu.avg = stu.total / 3.0;
 			
 			students[i] = stu;

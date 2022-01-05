@@ -7,14 +7,7 @@ public class StudentView {
 		System.out.println("이름\t번호\t국어점수\t영어점수\t수학점수\t총점\t평균");
 		System.out.println("---------------------------------------------------");
 		for (int i=0;i<students.length;i++) {
-			System.out.print(students[i].name + "\t");
-			System.out.print(students[i].number + "\t");
-			System.out.print(students[i].kor + "\t");
-			System.out.print(students[i].eng + "\t");
-			System.out.print(students[i].math + "\t");
-			System.out.print(students[i].total + "\t");
-			System.out.print(students[i].avg + "\t");
-			System.out.println();
+			this.viewStudent(students[i]); // 반복되는 코드 지우기
 
 		}
 	}

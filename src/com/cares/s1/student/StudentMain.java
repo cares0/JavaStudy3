@@ -21,10 +21,12 @@ public class StudentMain {
 		System.out.println("참조변수 student2 : " + student2);
 		
 		
-		// sc.start();
 		
 		
-			
+		sc.start();
+		
+		
+		 
 
 
 		
