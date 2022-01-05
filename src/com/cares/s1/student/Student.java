@@ -11,4 +11,13 @@ public class Student {
 	int total;
 	double avg;
 	
+	
+	public void makeTotal() {
+		System.out.println("참조변수 this");
+		System.out.println("참조변수 this : " + this);
+		
+		
+		
+	}
+	
 }

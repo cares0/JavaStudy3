@@ -5,10 +5,19 @@ public class StudentMain {
 	public static void main(String[] args) {
 
 		StudentController sc = new StudentController();
-		boolean check = true;
 		
+		Student student = new Student();
+		student.name = "aa";
+		student.makeTotal();
+		System.out.println("참조변수 student : " + student);
 
-		sc.start();
+		Student student2 = new Student();
+		System.out.println("참조변수 student2 : " + student2);
+		student2.makeTotal();
+		
+		// sc.start();
+		
+		
 			
 
 
