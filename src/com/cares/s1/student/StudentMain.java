@@ -8,12 +8,18 @@ public class StudentMain {
 		
 		Student student = new Student();
 		student.name = "aa";
+		student.number = 1;
+		student.kor = 10;
+		student.eng = 10;
+		student.math = 10;
 		student.makeTotal();
-		System.out.println("참조변수 student : " + student);
+		
+		
+		System.out.println(student.total);
 
 		Student student2 = new Student();
 		System.out.println("참조변수 student2 : " + student2);
-		student2.makeTotal();
+		
 		
 		// sc.start();
 		

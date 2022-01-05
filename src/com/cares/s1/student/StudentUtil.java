@@ -4,14 +4,23 @@ import java.util.Scanner;
 
 public class StudentUtil {
 	// 학생 입력용
-
+	Scanner sc;
+	// 세개의 메서드 모두 스캐너를 사용하고 있기 때문에 멤버변수로 써버리는게 나음
+	// Scanner sc = new Scanner(System.in); 아예 선언하고 초기화 해버려도 됨
+	// 이렇게 해버리면 근데 무조건 스캐너를 쓰게 됨
+	public void initUtil() {
+		sc = new Scanner(System.in); //
+	} // 스캐너를 사용하기 전에 결국 초기화를 해줘야 하는 것임
+	// 위에 처럼 해도 됨
+	
+	
 	public Student search(Student [] students) {
 		// 학생의 번호를 입력받음
 		// 입력받은 번호와 일치하는 학생을 찾아서 리턴
-		Scanner sc = new Scanner(System.in);
+		
 		Student student = null;
 		System.out.println("조회할 학생의 번호를 입력하세요.");
-		int num = sc.nextInt();
+		int num = sc.nextInt(); // sc 앞에 this. 이 생략된것임
 		
 		for (int i=0;i<students.length;i++) {
 			if (num == students[i].number) {
@@ -24,8 +33,7 @@ public class StudentUtil {
 		
 	}
 	public Student[] makeStudents() {
-		Scanner sc = new Scanner(System.in);
-		
+				
 		System.out.println("정보를 입력할 학생의 수를 입력하세요.");
 		int num = sc.nextInt();
 		Student [] students = new Student[num];
