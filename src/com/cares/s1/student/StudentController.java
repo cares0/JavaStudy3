@@ -33,16 +33,16 @@ public class StudentController {
 
 			case 2 :
 				if (students == null) {
-					sv.viewMessage("학생 정보를 먼저 입력해주세요");
+					sv.view("학생 정보를 먼저 입력해주세요");
 				} else {
-					sv.viewStudents(students);
+					sv.view(students);
 				}
 
 				break;
 
 			case 3 :
 				if(students == null) {
-					sv.viewMessage("학생 정보를 먼저 입력해주세요.");
+					sv.view("학생 정보를 먼저 입력해주세요.");
 					continue;
 				}
 				boolean check2 = true;
@@ -60,7 +60,7 @@ public class StudentController {
 							check2 = false;
 						}
 					} else {
-						sv.viewStudent(stu);
+						sv.view(stu);
 						check2 = false;
 					}
 				}
