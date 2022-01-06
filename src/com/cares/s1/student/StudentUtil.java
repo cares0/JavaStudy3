@@ -5,13 +5,10 @@ import java.util.Scanner;
 public class StudentUtil {
 	// 학생 입력용
 	Scanner sc;
-	// 세개의 메서드 모두 스캐너를 사용하고 있기 때문에 멤버변수로 써버리는게 나음
-	// Scanner sc = new Scanner(System.in); 아예 선언하고 초기화 해버려도 됨
-	// 이렇게 해버리면 근데 무조건 스캐너를 쓰게 됨
-	public void initUtil() {
-		sc = new Scanner(System.in); //
-	} // 스캐너를 사용하기 전에 결국 초기화를 해줘야 하는 것임
-	// 위에 처럼 해도 됨
+
+	public StudentUtil() {
+		this.sc = new Scanner(System.in);
+	}
 	
 	
 	public Student search(Student [] students) {
